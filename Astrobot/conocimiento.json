@@ -1,0 +1,226 @@
+{
+  "dominio": "Astronomía",
+  "descripcion": "Base de conocimiento sobre astronomía para el chatbot AstroBot",
+  "categorias": {
+    "sistema_solar": {
+      "descripcion": "El Sistema Solar está compuesto por el Sol y todos los cuerpos celestes que orbitan a su alrededor.",
+      "sol": {
+        "tipo": "Estrella de tipo G (enana amarilla)",
+        "edad": "4.600 millones de años",
+        "diametro": "1.392.700 km (109 veces el diámetro de la Tierra)",
+        "temperatura_superficie": "5.500 °C",
+        "temperatura_nucleo": "15 millones de °C",
+        "distancia_tierra": "149,6 millones de km (1 UA)",
+        "composicion": "74% hidrógeno, 24% helio, 2% otros elementos",
+        "vida_restante": "Aproximadamente 5.000 millones de años más"
+      },
+      "planetas": [
+        {
+          "nombre": "Mercurio",
+          "tipo": "Planeta rocoso",
+          "diametro_km": 4879,
+          "distancia_sol_UA": 0.39,
+          "periodo_orbital_dias": 88,
+          "lunas": 0,
+          "temperatura_max": "430 °C",
+          "temperatura_min": "-180 °C",
+          "dato_curioso": "A pesar de estar más cerca del Sol, no es el planeta más caliente; Venus lo supera por su efecto invernadero."
+        },
+        {
+          "nombre": "Venus",
+          "tipo": "Planeta rocoso",
+          "diametro_km": 12104,
+          "distancia_sol_UA": 0.72,
+          "periodo_orbital_dias": 225,
+          "lunas": 0,
+          "temperatura": "462 °C (promedio)",
+          "dato_curioso": "Rota en dirección opuesta a la mayoría de los planetas. Un día en Venus dura más que su año."
+        },
+        {
+          "nombre": "Tierra",
+          "tipo": "Planeta rocoso",
+          "diametro_km": 12742,
+          "distancia_sol_UA": 1.0,
+          "periodo_orbital_dias": 365.25,
+          "lunas": 1,
+          "temperatura_promedio": "15 °C",
+          "dato_curioso": "Único planeta conocido con vida. El 71% de su superficie está cubierta de agua líquida."
+        },
+        {
+          "nombre": "Marte",
+          "tipo": "Planeta rocoso",
+          "diametro_km": 6779,
+          "distancia_sol_UA": 1.52,
+          "periodo_orbital_dias": 687,
+          "lunas": 2,
+          "nombres_lunas": ["Fobos", "Deimos"],
+          "temperatura_promedio": "-60 °C",
+          "dato_curioso": "Tiene el volcán más alto del Sistema Solar: el Monte Olimpo con 21 km de altura."
+        },
+        {
+          "nombre": "Júpiter",
+          "tipo": "Planeta gaseoso gigante",
+          "diametro_km": 139820,
+          "distancia_sol_UA": 5.2,
+          "periodo_orbital_dias": 4333,
+          "lunas": 95,
+          "lunas_principales": ["Ío", "Europa", "Ganímedes", "Calisto"],
+          "dato_curioso": "La Gran Mancha Roja es una tormenta activa por más de 350 años. Europa podría tener océanos bajo su capa de hielo."
+        },
+        {
+          "nombre": "Saturno",
+          "tipo": "Planeta gaseoso gigante",
+          "diametro_km": 116460,
+          "distancia_sol_UA": 9.58,
+          "periodo_orbital_dias": 10759,
+          "lunas": 146,
+          "lunas_principales": ["Titán", "Encélado", "Mimas"],
+          "dato_curioso": "Sus anillos están compuestos de hielo y roca. Titán tiene atmósfera densa y lagos de metano líquido."
+        },
+        {
+          "nombre": "Urano",
+          "tipo": "Gigante de hielo",
+          "diametro_km": 50724,
+          "distancia_sol_UA": 19.2,
+          "periodo_orbital_dias": 30589,
+          "lunas": 27,
+          "dato_curioso": "Rota de lado con una inclinación axial de 98 grados."
+        },
+        {
+          "nombre": "Neptuno",
+          "tipo": "Gigante de hielo",
+          "diametro_km": 49244,
+          "distancia_sol_UA": 30.05,
+          "periodo_orbital_dias": 59800,
+          "lunas": 16,
+          "luna_principal": "Tritón",
+          "dato_curioso": "Tiene los vientos más fuertes del Sistema Solar, hasta 2.100 km/h. Tritón orbita en dirección retrógrada."
+        }
+      ],
+      "planetas_enanos": [
+        {"nombre": "Plutón", "dato": "Reclasificado en 2006. Tiene 5 lunas, siendo Caronte la más grande."},
+        {"nombre": "Eris", "dato": "Más masivo que Plutón. Su descubrimiento provocó la redefinición de planeta."},
+        {"nombre": "Ceres", "dato": "El único planeta enano del cinturón de asteroides. Tiene géiseres de vapor de agua."}
+      ]
+    },
+    "estrellas": {
+      "descripcion": "Las estrellas son esferas de plasma que generan energía por fusión nuclear en su núcleo.",
+      "tipos_espectrales": {
+        "O": "Azules, muy calientes más de 30.000 K, muy masivas y de vida corta.",
+        "B": "Azul-blancas, calientes entre 10.000 y 30.000 K. Ej: Rigel.",
+        "A": "Blancas entre 7.500 y 10.000 K. Ej: Sirio, Vega.",
+        "F": "Amarillo-blancas entre 6.000 y 7.500 K. Ej: Procyon.",
+        "G": "Amarillas entre 5.200 y 6.000 K. El Sol es de tipo G2.",
+        "K": "Naranja-amarillas entre 3.700 y 5.200 K. Ej: Arcturus.",
+        "M": "Rojas, frías menos de 3.700 K, las más comunes. Ej: Betelgeuse, Próxima Centauri."
+      },
+      "ciclo_vital": {
+        "nebulosa": "Nube de gas y polvo que colapsa por gravedad.",
+        "protoestrella": "Núcleo caliente antes de iniciar fusión nuclear.",
+        "secuencia_principal": "Fase estable de fusión de hidrógeno.",
+        "gigante_roja": "El hidrógeno se agota y la estrella se expande.",
+        "final_masivas": "Supernova, luego estrella de neutrones o agujero negro.",
+        "final_medianas": "Nebulosa planetaria, luego enana blanca."
+      },
+      "estrellas_notables": [
+        {"nombre": "Sirio", "dato": "La estrella más brillante del cielo nocturno, a 8,6 años luz. Es un sistema binario."},
+        {"nombre": "Betelgeuse", "dato": "Supergigante roja en Orión, candidata a supernova. Tan grande que si estuviera en el Sol llegaría hasta Júpiter."},
+        {"nombre": "Próxima Centauri", "dato": "La estrella más cercana al Sol, a 4,24 años luz. Enana roja con al menos un exoplaneta en zona habitable."},
+        {"nombre": "VY Canis Majoris", "dato": "Una de las estrellas más grandes conocidas, hipergigante roja con radio 1.400 veces el del Sol."}
+      ]
+    },
+    "galaxias": {
+      "via_lactea": {
+        "tipo": "Galaxia espiral barrada",
+        "diametro": "100.000 años luz aproximadamente",
+        "estrellas": "200.000 a 400.000 millones de estrellas",
+        "edad": "13.600 millones de años",
+        "agujero_negro_central": "Sagitario A*, masa de 4 millones de soles",
+        "posicion_solar": "Brazo de Orión, a 26.000 años luz del centro",
+        "galaxias_cercanas": ["Nube de Magallanes Grande", "Nube de Magallanes Pequeña", "Galaxia de Andrómeda M31"]
+      },
+      "tipos_galaxias": {
+        "espirales": "Tienen brazos enrollados con formación estelar activa. Ej: Vía Láctea, M31.",
+        "elipticas": "Forma ovoide, poca formación estelar, estrellas viejas. Ej: M87.",
+        "irregulares": "Sin forma definida, generalmente producto de interacciones gravitacionales.",
+        "lenticulares": "Intermedias entre espirales y elípticas."
+      },
+      "colision_andromeda": "En 4.500 millones de años la Vía Láctea y Andrómeda colisionarán para formar una galaxia elíptica llamada Milkomeda."
+    },
+    "cosmologia": {
+      "big_bang": {
+        "descripcion": "El universo comenzó hace 13.800 millones de años en un estado de densidad y temperatura extremas.",
+        "evidencias": ["Expansión del universo ley de Hubble", "Radiación de fondo de microondas CMB", "Abundancia de elementos ligeros nucleosíntesis primordial"]
+      },
+      "expansion_universo": {
+        "constante_hubble": "70 km/s/Mpc aproximadamente",
+        "energia_oscura": "Representa el 68% del universo y causa la expansión acelerada",
+        "materia_oscura": "Representa el 27% del universo, no emite luz pero tiene gravedad",
+        "materia_normal": "Solo el 5% del universo es materia ordinaria bariónica"
+      },
+      "destinos_universo": [
+        "Big Freeze: expansión indefinida hasta muerte térmica",
+        "Big Rip: energía oscura desgarra toda la materia",
+        "Big Crunch: gravedad revierte la expansión, considerado menos probable"
+      ]
+    },
+    "agujeros_negros": {
+      "descripcion": "Regiones del espacio-tiempo donde la gravedad es tan intensa que nada, ni la luz, puede escapar.",
+      "tipos": {
+        "estelares": "Masa de 3 a 100 soles. Formados por colapso de estrellas masivas.",
+        "de_masa_intermedia": "Masa de 100 a 100.000 soles. Poco conocidos.",
+        "supermasivos": "Millones a miles de millones de masas solares. En el centro de casi todas las galaxias.",
+        "primordiales": "Hipotéticos, formados en el Big Bang."
+      },
+      "componentes": {
+        "singularidad": "Punto central de densidad infinita.",
+        "horizonte_de_sucesos": "Límite del que nada puede escapar.",
+        "ergosfera": "Región exterior al horizonte donde el espacio-tiempo es arrastrado."
+      },
+      "ejemplos_famosos": [
+        {"nombre": "Sagitario A*", "dato": "Agujero negro supermasivo en el centro de la Vía Láctea con 4 millones de masas solares."},
+        {"nombre": "M87*", "dato": "Primera fotografía de un agujero negro en 2019. Tiene 6.500 millones de masas solares a 55 millones de años luz."},
+        {"nombre": "TON 618", "dato": "Uno de los más masivos conocidos con 66.000 millones de masas solares."}
+      ],
+      "radiacion_hawking": "Predicción de Stephen Hawking: los agujeros negros emiten radiación lentamente y eventualmente se evaporan."
+    },
+    "exoplanetas": {
+      "descripcion": "Planetas que orbitan estrellas fuera del Sistema Solar.",
+      "estadisticas": "Más de 5.500 exoplanetas confirmados al 2024.",
+      "metodos_deteccion": {
+        "transito": "El planeta pasa frente a su estrella reduciendo su brillo. Usado por Kepler y TESS.",
+        "velocidad_radial": "La gravedad del planeta hace oscilar la estrella, detectado por efecto Doppler.",
+        "imagen_directa": "Fotografiar directamente el planeta, difícil por el brillo estelar.",
+        "microlente_gravitacional": "La gravedad del sistema amplifica la luz de una estrella de fondo."
+      },
+      "zona_habitable": "Región alrededor de una estrella donde el agua líquida puede existir en la superficie.",
+      "ejemplos_notables": [
+        {"nombre": "Proxima b", "dato": "En zona habitable de Próxima Centauri, a 4,24 años luz de la Tierra."},
+        {"nombre": "TRAPPIST-1e", "dato": "Uno de 7 planetas rocosos en el sistema TRAPPIST-1, con tres en zona habitable."},
+        {"nombre": "Kepler-452b", "dato": "Llamado primo de la Tierra, orbita una estrella similar al Sol con período de 385 días."},
+        {"nombre": "HD 189733b", "dato": "En este planeta llueve silicato de vidrio fundido lateralmente a 8.700 km/h."}
+      ]
+    },
+    "fenomenos_astronomicos": {
+      "eclipses": {
+        "solar": "La Luna se interpone entre el Sol y la Tierra. Puede ser total, parcial o anular.",
+        "lunar": "La Tierra se interpone entre el Sol y la Luna. La Luna puede volverse rojiza formando la Luna de sangre."
+      },
+      "lluvia_meteoritos": [
+        {"nombre": "Perseidas", "fecha": "Agosto", "dato": "Hasta 100 meteoros por hora, provenientes del cometa Swift-Tuttle."},
+        {"nombre": "Gemínidas", "fecha": "Diciembre", "dato": "Una de las más intensas, originadas en el asteroide 3200 Phaeton."},
+        {"nombre": "Leónidas", "fecha": "Noviembre", "dato": "Cada 33 años produce tormentas de meteoros espectaculares."}
+      ],
+      "supernovas": "Explosión estelar que supera temporalmente la luminosidad de toda una galaxia. Es la fuente de los elementos pesados del universo.",
+      "pulsares": "Estrellas de neutrones que rotan rápidamente emitiendo haces de radiación. Algunos giran cientos de veces por segundo.",
+      "quasares": "Núcleos galácticos activos extremadamente luminosos alimentados por agujeros negros supermasivos. Son los objetos más brillantes del universo."
+    },
+    "telescopios_misiones": {
+      "hubble": "Lanzado en 1990. Ha revolucionado la astronomía con imágenes profundas del universo. Orbita a 547 km de altitud.",
+      "james_webb": "Lanzado en 2021. Observa en infrarrojo, puede ver las primeras galaxias formadas y analizar atmósferas de exoplanetas.",
+      "voyager": "Voyager 1 es el objeto humano más lejano, en el espacio interestelar a más de 23.000 millones de km del Sol.",
+      "artemis": "Programa de la NASA para volver a la Luna y establecer presencia permanente durante los años 2020.",
+      "curiosity_perseverance": "Rovers en Marte buscando signos de vida pasada y preparando la futura exploración humana."
+    }
+  }
+}
